@@ -15,23 +15,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ6-j8-wpV" userLabel="btnInstagram">
-                    <rect key="frame" x="26" y="14" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ6-j8-wpV" userLabel="btnInstagram">
+                    <rect key="frame" x="16" y="16" width="45" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="K6K-kc-ryr"/>
+                        <constraint firstAttribute="height" constant="40" id="mOb-t2-bgl"/>
+                    </constraints>
                     <state key="normal" image="instagram.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHb-m0-wBc" userLabel="btnFCB">
-                    <rect key="frame" x="81" y="14" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHb-m0-wBc" userLabel="btnFCB">
+                    <rect key="frame" x="77" y="16" width="45" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="rYd-nX-adC"/>
+                        <constraint firstAttribute="height" constant="40" id="zIf-az-Tn2"/>
+                    </constraints>
                     <state key="normal" image="fcb.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFS-SJ-X5Q" userLabel="btnTwitter">
-                    <rect key="frame" x="135" y="14" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFS-SJ-X5Q" userLabel="btnTwitter">
+                    <rect key="frame" x="138" y="16" width="45" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="obt-pO-Ydr"/>
+                        <constraint firstAttribute="width" constant="45" id="wRf-vr-IfZ"/>
+                    </constraints>
                     <state key="normal" image="twitter.png"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mQ6-j8-wpV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="KRy-nu-QLr"/>
+                <constraint firstItem="mQ6-j8-wpV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="VLW-Og-b95"/>
+                <constraint firstItem="kHb-m0-wBc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Wj7-3s-uHA"/>
+                <constraint firstItem="kHb-m0-wBc" firstAttribute="leading" secondItem="mQ6-j8-wpV" secondAttribute="trailing" constant="16" id="lu3-so-atQ"/>
+                <constraint firstItem="QFS-SJ-X5Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="wc1-Mw-vGv"/>
+                <constraint firstItem="QFS-SJ-X5Q" firstAttribute="leading" secondItem="kHb-m0-wBc" secondAttribute="trailing" constant="16" id="wrO-ei-SeU"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="btnFCB" destination="kHb-m0-wBc" id="HHR-pM-TOi"/>
@@ -42,8 +59,8 @@
         </view>
     </objects>
     <resources>
-        <image name="fcb.png" width="40" height="40"/>
-        <image name="instagram.png" width="40" height="40"/>
-        <image name="twitter.png" width="40" height="40"/>
+        <image name="fcb.png" width="45" height="40"/>
+        <image name="instagram.png" width="45" height="40"/>
+        <image name="twitter.png" width="45" height="40"/>
     </resources>
 </document>
