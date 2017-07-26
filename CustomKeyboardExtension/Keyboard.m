@@ -18,9 +18,5 @@
 }
 */
 
-- (IBAction)onInstagram:(id)sender {
-}
-    
-- (IBAction)onFCB:(id)sender {
-}
+
 @end

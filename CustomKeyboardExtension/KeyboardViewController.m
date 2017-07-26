@@ -26,6 +26,7 @@
     
     // Perform custom UI setup here
     self.keyboard = [[[NSBundle mainBundle] loadNibNamed:@"Keyboard" owner:nil options:nil] objectAtIndex:0];
+   
     [self addGesturesToKeyboard];
     self.inputView = self.keyboard;
 }
